@@ -237,7 +237,7 @@ margin-right: auto;
     cursor: pointer;  
     text-align: center;
 }
-
+/*backdrop*/
 .backdrop {
     position: fixed;
     top: 0;
@@ -258,7 +258,7 @@ margin-right: auto;
   
     transition: var(--animation);
   }
-  
+  /*form*/
   .modal {
     position: absolute;
     top: 50%;
