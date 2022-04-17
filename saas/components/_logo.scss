@@ -1,0 +1,20 @@
+.logo {
+    margin-right: 93px;
+
+    min-width: 145px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.14;
+    color: var(--primery-title-color);
+    transition: color var(--animation);
+}
+
+.logo-first-part {
+    color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}

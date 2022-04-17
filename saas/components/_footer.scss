@@ -1,0 +1,29 @@
+.footer {
+    background-color: var(--primery-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--primery-white-color);
+
+    transition: color var(--animation);
+}
+
+.footer-logo-first-part {
+    color: var(--accent-color);
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+    color: var(--accent-color);
+}
