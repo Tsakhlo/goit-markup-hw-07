@@ -176,7 +176,7 @@ margin-right: auto;
     transition: color var(--animation);
 }
 
-.conyact__icon-envelope {
+.contact__icon-envelope {
     margin-right: 10px;
     fill: currentColor;
 }
