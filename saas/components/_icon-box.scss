@@ -14,18 +14,9 @@
     column-gap: 10px;
 }
 
-.footer-icons-list .item {
+.footer-item {
     width: 44px;
     height: 44px;
-}
-
-.footer-icons-list .item use {
-    fill: var(--primery-white-color);
-}
-
-.footer-icon-link:hover,
-.footer-icon-link:focus {
-    background-color: var(--accent-color);
 }
 
 .footer-icon-link {
@@ -38,4 +29,11 @@
     height: 100%;
 
     transition: background-color var(--animation);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+    .footer-icon {
+        fill: var(--primery-white-color);
+    }
 }

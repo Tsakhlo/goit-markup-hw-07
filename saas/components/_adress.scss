@@ -2,32 +2,30 @@
 
 .address-list {
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 20px; 
+}
+
+.address-item {
+    margin-top: 9px;
 }
 
 .footer-address-link {
     color: var(--primery-white-color);
     line-height: 1.71;
     transition: color var(--animation);
-}
-
-.footer-address,
-.footer-mail,
-.footer-tel {
-    margin-top: 9px;
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
 }
 
 .footer-mail-link,
 .footer-tel-link {
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--animation);
-}
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
 
-.footer-address-link:hover,
-.footer-mail-link:hover,
-.footer-tel-link:hover,
-.footer-address-link:focus,
-.footer-mail-link:focus,
-.footer-tel-link:focus {
-    color: var(--accent-color);
 }

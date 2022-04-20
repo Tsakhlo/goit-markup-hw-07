@@ -760,7 +760,7 @@ img {
   padding-bottom: 60px;
 }
 
-.footer .container {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
@@ -778,8 +778,7 @@ img {
   color: var(--accent-color);
 }
 
-.footer-logo:hover,
-.footer-logo:focus {
+.footer-logo:hover, .footer-logo:focus {
   color: var(--accent-color);
 }
 
@@ -789,16 +788,18 @@ img {
   margin-top: 20px;
 }
 
+.address-item {
+  margin-top: 9px;
+}
+
 .footer-address-link {
   color: var(--primery-white-color);
   line-height: 1.71;
   transition: color var(--animation);
 }
 
-.footer-address,
-.footer-mail,
-.footer-tel {
-  margin-top: 9px;
+.footer-address-link:hover, .footer-address-link:focus {
+  color: var(--accent-color);
 }
 
 .footer-mail-link,
@@ -807,11 +808,8 @@ img {
   transition: color var(--animation);
 }
 
-.footer-address-link:hover,
-.footer-mail-link:hover,
+.footer-mail-link:hover, .footer-mail-link:focus,
 .footer-tel-link:hover,
-.footer-address-link:focus,
-.footer-mail-link:focus,
 .footer-tel-link:focus {
   color: var(--accent-color);
 }
@@ -833,18 +831,9 @@ img {
   column-gap: 10px;
 }
 
-.footer-icons-list .item {
+.footer-item {
   width: 44px;
   height: 44px;
-}
-
-.footer-icons-list .item use {
-  fill: var(--primery-white-color);
-}
-
-.footer-icon-link:hover,
-.footer-icon-link:focus {
-  background-color: var(--accent-color);
 }
 
 .footer-icon-link {
@@ -858,6 +847,14 @@ img {
   transition: background-color var(--animation);
 }
 
+.footer-icon-link:hover, .footer-icon-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-icon-link .footer-icon {
+  fill: var(--primery-white-color);
+}
+
 /*footer-mailing*/
 .footer-mailing {
   margin-left: auto;
@@ -868,7 +865,7 @@ img {
   margin-top: 20px;
 }
 
-.footer-mailing input {
+.footer-input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -878,7 +875,7 @@ img {
   color: var(--primery-white-color);
 }
 
-.footer-mailing input::placeholder {
+.footer-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
@@ -910,7 +907,7 @@ img {
   margin-left: 10px;
 }
 
-.mailing-icon {
+.footer-mailing-icon .mailing-icon {
   fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */
