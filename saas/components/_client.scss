@@ -23,15 +23,14 @@
     border-radius: 4px;
     fill: var(--icons-gray);
     transition: fill var(--animation), border var(--animation);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        fill: var(--accent-color);
+    }
 }
 
-.clients-icon-list .item {
+.item {
     width: 170px;
     height: 92px;
-}
-
-.client-link:hover,
-.client-link:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
 }

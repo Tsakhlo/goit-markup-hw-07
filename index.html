@@ -51,9 +51,9 @@
     <!--заказ услуги-->
     
     <section class="hero">
-        <div class="container">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button data-modal-open class="hero-button" type="button"> Заказать услугу </button>
+        <div class="container hero__container">
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        <button data-modal-open class="hero__button" type="button"> Заказать услугу </button>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
@@ -107,18 +107,18 @@
                    
                     
 
-                    <label class="form-checkbox">
+                    <label class="checkbox">
                     <input 
                     type="checkbox" 
-                    class="modal-check">
-                    <span class="check-icon">
-                        <svg class="modal-check-icon" width="16" height="15">
+                    class="checkbox__modal">
+                    <span class="checkbox__span">
+                        <svg class="checkbox__icon" width="16" height="15">
                             <use href="./images/icons.svg#icon-check"></use>
                         </svg>
                     </span>
-                    <p class="check-text">
+                    <p class="checkbox__text">
                     Соглашаюсь с рассылкой и принимаю  
-                    <a class="check-link" href="">Условия договора</a>
+                    <a class="checkbox__link" href="">Условия договора</a>
                     </p>
                     </label>
                    
@@ -140,41 +140,41 @@
         <div class="container">
         <h2 class="hang-title">достоинства</h2>
         <ul class="hang-list">
-            <li class="hang-item">
-                <div class="hang-container">
+            <li class="hang-list__item">
+                <div class="hang-list__container">
                 <svg width ="70" height ="70">
                     <use href="./images/icons.svg#icon-vector1"></use>
                 </svg>
                 </div>   
-                <h3 class="hang-subtitle">Внимание к деталям</h3>
-                <p class="hang-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                <h3 class="hang-list__subtitle">Внимание к деталям</h3>
+                <p class="hang-list__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li class="hang-item">
-                <div class="hang-container">
+            <li class="hang-list__item">
+                <div class="hang-list__container">
                 <svg width ="70" height ="70">
                     <use href="./images/icons.svg#icon-vector2"></use>
                 </svg>
                 </div>  
-                <h3 class="hang-subtitle">Пунктуальность</h3>
-                <p class="hang-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <h3 class="hang-list__subtitle">Пунктуальность</h3>
+                <p class="hang-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li class="hang-item">
-                <div class="hang-container">
+            <li class="hang-list__item">
+                <div class="hang-list__container">
                 <svg width ="70" height ="70">
                     <use href="./images/icons.svg#icon-vector3"></use>
                 </svg>
                 </div>  
-                <h3 class="hang-subtitle">Планирование</h3>
-                <p class="hang-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <h3 class="hang-list__subtitle">Планирование</h3>
+                <p class="hang-list__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li class="hang-item">
-                <div class="hang-container">
+            <li class="hang-list__item">
+                <div class="hang-list__container">
                 <svg width ="70" height ="70">
                     <use href="./images/icons.svg#icon-vector4"></use>
                 </svg>
                 </div>  
-                <h3 class="hang-subtitle">Современные технологии</h3>
-                <p class="hang-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <h3 class="hang-list__subtitle">Современные технологии</h3>
+                <p class="hang-list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
     </div>
@@ -184,21 +184,21 @@
     <!-- чем мы занимаемся -->
  
         <section class="product section">
-            <div class="container product-container">
-            <h2 class="product-title">Чем мы занимаемся</h2>
-            <ul class="product-list">
-            <li class="product-item">
-                <img src="./images/img.jpg" alt="работа за компьютером" Width="370" Height="294" class="product-item-img"
+            <div class="container product__container">
+            <h2 class="product__title">Чем мы занимаемся</h2>
+            <ul class="product__list">
+            <li class="product__item">
+                <img src="./images/img.jpg" alt="работа за компьютером" Width="370" Height="294" class="product__item-img"
                 >
-                <div class="product-description"><p class="product-text">Десктопные приложения</p></div>
+                <div class="product__description"><p class="product__text">Десктопные приложения</p></div>
             </li>
-            <li class="product-item">
-                <img src="./images/img-1.jpg" alt="работа на телефоне" Width="370" Height="294" class="product-item-img">
-                <div class="product-description"><p class="product-text">Мобильные приложения</p></div>
+            <li class="product__item">
+                <img src="./images/img-1.jpg" alt="работа на телефоне" Width="370" Height="294" class="product__item-img">
+                <div class="product__description"><p class="product__text">Мобильные приложения</p></div>
             </li>
-            <li class="product-item">
-                <img src="./images/img-2.jpg" alt="работа на планшете" Width="370" Height="294" class="product-item-img">
-                <div class="product-description"><p class="product-text">Дизайнерские решения</p></div>
+            <li class="product__item">
+                <img src="./images/img-2.jpg" alt="работа на планшете" Width="370" Height="294" class="product__item-img">
+                <div class="product__description"><p class="product__text">Дизайнерские решения</p></div>
             </li>
         </ul>
     </div>
