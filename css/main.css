@@ -82,19 +82,19 @@ img {
 }
 
 /*header*/
-.head__container {
-  display: flex;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
 .head {
   border-bottom: 1px solid #ececec;
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
   font-style: normal;
+}
+
+.head__container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /*logo*/
@@ -109,12 +109,11 @@ img {
   transition: color var(--animation);
 }
 
-.logo-first-part {
+.logo__first {
   color: var(--accent-color);
 }
 
-.logo:hover,
-.logo:focus {
+.logo:hover, .logo:focus {
   color: var(--accent-color);
 }
 
@@ -122,20 +121,6 @@ img {
 .navi__list {
   display: flex;
   align-items: center;
-}
-
-.navi__links {
-  display: flex;
-}
-
-.navi__list .navi__links + .navi__links {
-  margin-left: 50px;
-}
-
-.navi__link {
-  position: relative;
-  color: var(--primery-title-color);
-  transition: color var(--animation);
 }
 
 .navi__list .is-active {
@@ -155,8 +140,21 @@ img {
   pointer-events: none;
 }
 
-.navi__link:focus,
-.navi__link:hover {
+.navi__links {
+  display: flex;
+}
+
+.navi__list .navi__links + .navi__links {
+  margin-left: 50px;
+}
+
+.navi__link {
+  position: relative;
+  color: var(--primery-title-color);
+  transition: color var(--animation);
+}
+
+.navi__link:focus, .navi__link:hover {
   color: var(--accent-color);
 }
 
@@ -178,14 +176,13 @@ img {
   transition: color var(--animation);
 }
 
+.contact__link:hover, .contact__link:focus {
+  color: var(--accent-color);
+}
+
 .contact__icon-envelope {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.contact__link:hover,
-.contact__link:focus {
-  color: var(--accent-color);
 }
 
 /*hero*/

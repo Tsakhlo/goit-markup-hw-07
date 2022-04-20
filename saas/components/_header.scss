@@ -1,9 +1,4 @@
-.head__container {
-    display: flex;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
+
 
 .head {
 
@@ -12,4 +7,10 @@
     letter-spacing: 0.02em;
     line-height: 1.14;
     font-style: normal;
+    &__container {
+        display: flex;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 }

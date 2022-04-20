@@ -8,13 +8,14 @@
     line-height: 1.14;
     color: var(--primery-title-color);
     transition: color var(--animation);
+    &__first {
+        color: var(--accent-color);
+    }
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.logo-first-part {
-    color: var(--accent-color);
-}
 
-.logo:hover,
-.logo:focus {
-    color: var(--accent-color);
-}
+
