@@ -1,21 +1,30 @@
+.pages {
+    display: flex;
+    flex-wrap: wrap;
+    & .page-list-item:not(:nth-child(3n)) {
+        margin-right: 30px;
+    }
+    & .page-list-item:not(:nth-child(n + 7)) {
+        margin-bottom: 30px;
+    }
+}
+
 .card-container {
     padding: 20px 24px;
     border-bottom: 1px solid rgba(238, 238, 238, 1);
     border-right: 1px solid rgba(238, 238, 238, 1);
     border-left: 1px solid rgba(238, 238, 238, 1);
-}
-
-.pages {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.pages .page-list-item:not(:nth-child(3n)) {
-    margin-right: 30px;
-}
-
-.pages .page-list-item:not(:nth-child(n + 7)) {
-    margin-bottom: 30px;
+    .page-subtitle {
+        margin-bottom: 4px;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+    }
+    .page-text {
+        color: var(--primery-text-color);
+        font-size: 16px;
+        line-height: 1.87
+    }
 }
 
 .page-item-link {
@@ -23,52 +32,43 @@
 
     color: var(--pimery-title-color);
     transition: color var(--animation);
-}
-
-.page-subtitle {
-    margin-bottom: 4px;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-
-.page-text {
-    color: var(--primery-text-color);
-    font-size: 16px;
-    line-height: 1.87
-}
-
-.page-item-link:hover,
-.page-item-link:focus {
-    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
-.page-item-link:hover .page-overlay::before,
-.page-item-link:focus .page-overlay::before {
-    transform: translateY(0);
-    opacity: 1;
+    &:hover,
+    &:focus {
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            0px 1px 1px rgba(0, 0, 0, 0.12);
+    }
+    &:hover .pages-overlay::before,
+    &:focus .pages-overlay::before {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    &:hover .overlay,
+    &:focus .overlay {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .page-overlay {
     position: relative;
     overflow: hidden;
+    &::before {
+        position: absolute;
+    
+        content: '';
+        width: 100%;
+        height: 100%;
+    
+    
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform var(--animation);
+    }
 
 }
 
-.page-overlay::before {
-    position: absolute;
-
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-
-    opacity: 0;
-    transform: translateY(100%);
-    transition: transform var(--animation);
-}
 
 .overlay {
     top: 0;
@@ -78,20 +78,15 @@
     padding-bottom: 63px;
     padding-right: 24px;
     padding-left: 24px;
-
+    background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
     transform: translateY(100%);
     transition: var(--animation);
+    &-text {
+        font-size: 18px;
+        line-height: 1.55;
+        color: var(--primery-white-color);
+    }
+
 }
 
-.overlay-text {
-    font-size: 18px;
-    line-height: 1.55;
-    color: var(--primery-white-color);
-}
-
-.page-item-link:hover .overlay,
-.page-item-link:focus .overlay {
-    opacity: 1;
-    transform: translateY(0);
-}
